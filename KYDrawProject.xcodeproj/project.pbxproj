@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB99B2D31FAA6FF700ECD385 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2D21FAA6FF700ECD385 /* AppDelegate.m */; };
+		AB99B2D61FAA6FF700ECD385 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2D51FAA6FF700ECD385 /* ViewController.m */; };
+		AB99B2DB1FAA6FF700ECD385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB99B2DA1FAA6FF700ECD385 /* Assets.xcassets */; };
+		AB99B2DE1FAA6FF700ECD385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB99B2DC1FAA6FF700ECD385 /* LaunchScreen.storyboard */; };
+		AB99B2E11FAA6FF700ECD385 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2E01FAA6FF700ECD385 /* main.m */; };
+		AB99B2F11FAA718700ECD385 /* BrushView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2E91FAA718600ECD385 /* BrushView.m */; };
+		AB99B2F21FAA718700ECD385 /* BrushView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB99B2EA1FAA718600ECD385 /* BrushView.xib */; };
+		AB99B2F31FAA718700ECD385 /* QCDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2EC1FAA718600ECD385 /* QCDrawView.m */; };
+		AB99B2F41FAA718700ECD385 /* QCPath.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2EE1FAA718600ECD385 /* QCPath.m */; };
+		AB99B2F51FAA718700ECD385 /* QCWhiteBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2F01FAA718600ECD385 /* QCWhiteBoardView.m */; };
+		AB99B2FA1FAA75C100ECD385 /* QCWilddogSync.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2F91FAA75C100ECD385 /* QCWilddogSync.m */; };
+		AB99B2FE1FAA762400ECD385 /* WDWhiteBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2FD1FAA762400ECD385 /* WDWhiteBoard.m */; };
+		AB99B3031FAA846E00ECD385 /* QCAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B3021FAA846D00ECD385 /* QCAPIManager.m */; };
+		AB99B3081FAA84A100ECD385 /* QCAPIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B3051FAA84A100ECD385 /* QCAPIConfig.m */; };
+		AB99B30B1FAA87A300ECD385 /* QCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B30A1FAA87A300ECD385 /* QCModel.m */; };
+		AB99B30E1FAA895A00ECD385 /* QCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B30C1FAA895900ECD385 /* QCWebViewController.m */; };
+		AB99B3111FAA8AEE00ECD385 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B3101FAA8AEE00ECD385 /* RootViewController.m */; };
+		C94D44B581F12091395380AF /* libPods-KYDrawProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E48F2C6177C82E5931714C06 /* libPods-KYDrawProject.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB99B2CE1FAA6FF700ECD385 /* KYDrawProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYDrawProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB99B2D11FAA6FF700ECD385 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB99B2D21FAA6FF700ECD385 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB99B2D41FAA6FF700ECD385 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB99B2D51FAA6FF700ECD385 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB99B2DA1FAA6FF700ECD385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB99B2DD1FAA6FF700ECD385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB99B2DF1FAA6FF700ECD385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB99B2E01FAA6FF700ECD385 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB99B2E81FAA718600ECD385 /* BrushView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrushView.h; sourceTree = "<group>"; };
+		AB99B2E91FAA718600ECD385 /* BrushView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrushView.m; sourceTree = "<group>"; };
+		AB99B2EA1FAA718600ECD385 /* BrushView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrushView.xib; sourceTree = "<group>"; };
+		AB99B2EB1FAA718600ECD385 /* QCDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCDrawView.h; sourceTree = "<group>"; };
+		AB99B2EC1FAA718600ECD385 /* QCDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCDrawView.m; sourceTree = "<group>"; };
+		AB99B2ED1FAA718600ECD385 /* QCPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPath.h; sourceTree = "<group>"; };
+		AB99B2EE1FAA718600ECD385 /* QCPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPath.m; sourceTree = "<group>"; };
+		AB99B2EF1FAA718600ECD385 /* QCWhiteBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCWhiteBoardView.h; sourceTree = "<group>"; };
+		AB99B2F01FAA718600ECD385 /* QCWhiteBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCWhiteBoardView.m; sourceTree = "<group>"; };
+		AB99B2F71FAA71F700ECD385 /* GloableConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GloableConstant.h; sourceTree = "<group>"; };
+		AB99B2F81FAA75C100ECD385 /* QCWilddogSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCWilddogSync.h; sourceTree = "<group>"; };
+		AB99B2F91FAA75C100ECD385 /* QCWilddogSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCWilddogSync.m; sourceTree = "<group>"; };
+		AB99B2FB1FAA75DB00ECD385 /* QCWilddogSerializing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCWilddogSerializing.h; sourceTree = "<group>"; };
+		AB99B2FC1FAA762400ECD385 /* WDWhiteBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDWhiteBoard.h; sourceTree = "<group>"; };
+		AB99B2FD1FAA762400ECD385 /* WDWhiteBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWhiteBoard.m; sourceTree = "<group>"; };
+		AB99B2FF1FAA766B00ECD385 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		AB99B3001FAA76A400ECD385 /* QCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCLog.h; sourceTree = "<group>"; };
+		AB99B3011FAA846D00ECD385 /* QCAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCAPIManager.h; sourceTree = "<group>"; };
+		AB99B3021FAA846D00ECD385 /* QCAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCAPIManager.m; sourceTree = "<group>"; };
+		AB99B3041FAA84A000ECD385 /* QCAPIDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCAPIDefines.h; sourceTree = "<group>"; };
+		AB99B3051FAA84A100ECD385 /* QCAPIConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCAPIConfig.m; sourceTree = "<group>"; };
+		AB99B3061FAA84A100ECD385 /* QCAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCAPI.h; sourceTree = "<group>"; };
+		AB99B3071FAA84A100ECD385 /* QCAPIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCAPIConfig.h; sourceTree = "<group>"; };
+		AB99B3091FAA87A300ECD385 /* QCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCModel.h; sourceTree = "<group>"; };
+		AB99B30A1FAA87A300ECD385 /* QCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCModel.m; sourceTree = "<group>"; };
+		AB99B30C1FAA895900ECD385 /* QCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCWebViewController.m; sourceTree = "<group>"; };
+		AB99B30D1FAA895900ECD385 /* QCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCWebViewController.h; sourceTree = "<group>"; };
+		AB99B30F1FAA8AEE00ECD385 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		AB99B3101FAA8AEE00ECD385 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		D9F2E30D986E34BC84C8EAD3 /* Pods-KYDrawProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYDrawProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYDrawProject/Pods-KYDrawProject.release.xcconfig"; sourceTree = "<group>"; };
+		E48F2C6177C82E5931714C06 /* libPods-KYDrawProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KYDrawProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F08E7A36425AB125E072192C /* Pods-KYDrawProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYDrawProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KYDrawProject/Pods-KYDrawProject.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB99B2CB1FAA6FF700ECD385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94D44B581F12091395380AF /* libPods-KYDrawProject.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E49766FC07BEF7F50D95C3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB99B2FF1FAA766B00ECD385 /* PrefixHeader.pch */,
+				E48F2C6177C82E5931714C06 /* libPods-KYDrawProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42186234B84BE96AAD5BE3E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F08E7A36425AB125E072192C /* Pods-KYDrawProject.debug.xcconfig */,
+				D9F2E30D986E34BC84C8EAD3 /* Pods-KYDrawProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB99B2C51FAA6FF700ECD385 = {
+			isa = PBXGroup;
+			children = (
+				AB99B2D01FAA6FF700ECD385 /* KYDrawProject */,
+				AB99B2CF1FAA6FF700ECD385 /* Products */,
+				42186234B84BE96AAD5BE3E2 /* Pods */,
+				0E49766FC07BEF7F50D95C3C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AB99B2CF1FAA6FF700ECD385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB99B2CE1FAA6FF700ECD385 /* KYDrawProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB99B2D01FAA6FF700ECD385 /* KYDrawProject */ = {
+			isa = PBXGroup;
+			children = (
+				AB99B30D1FAA895900ECD385 /* QCWebViewController.h */,
+				AB99B30C1FAA895900ECD385 /* QCWebViewController.m */,
+				AB99B3011FAA846D00ECD385 /* QCAPIManager.h */,
+				AB99B3021FAA846D00ECD385 /* QCAPIManager.m */,
+				AB99B3061FAA84A100ECD385 /* QCAPI.h */,
+				AB99B3071FAA84A100ECD385 /* QCAPIConfig.h */,
+				AB99B3051FAA84A100ECD385 /* QCAPIConfig.m */,
+				AB99B3041FAA84A000ECD385 /* QCAPIDefines.h */,
+				AB99B3091FAA87A300ECD385 /* QCModel.h */,
+				AB99B30A1FAA87A300ECD385 /* QCModel.m */,
+				AB99B2F61FAA71F700ECD385 /* Tools */,
+				AB99B2E71FAA718600ECD385 /* Draw View */,
+				AB99B2D11FAA6FF700ECD385 /* AppDelegate.h */,
+				AB99B2D21FAA6FF700ECD385 /* AppDelegate.m */,
+				AB99B2D41FAA6FF700ECD385 /* ViewController.h */,
+				AB99B2D51FAA6FF700ECD385 /* ViewController.m */,
+				AB99B30F1FAA8AEE00ECD385 /* RootViewController.h */,
+				AB99B3101FAA8AEE00ECD385 /* RootViewController.m */,
+				AB99B2DA1FAA6FF700ECD385 /* Assets.xcassets */,
+				AB99B2DC1FAA6FF700ECD385 /* LaunchScreen.storyboard */,
+				AB99B2DF1FAA6FF700ECD385 /* Info.plist */,
+				AB99B2E01FAA6FF700ECD385 /* main.m */,
+			);
+			path = KYDrawProject;
+			sourceTree = "<group>";
+		};
+		AB99B2E71FAA718600ECD385 /* Draw View */ = {
+			isa = PBXGroup;
+			children = (
+				AB99B2E81FAA718600ECD385 /* BrushView.h */,
+				AB99B2E91FAA718600ECD385 /* BrushView.m */,
+				AB99B2EA1FAA718600ECD385 /* BrushView.xib */,
+				AB99B2EB1FAA718600ECD385 /* QCDrawView.h */,
+				AB99B2EC1FAA718600ECD385 /* QCDrawView.m */,
+				AB99B2ED1FAA718600ECD385 /* QCPath.h */,
+				AB99B2EE1FAA718600ECD385 /* QCPath.m */,
+				AB99B2EF1FAA718600ECD385 /* QCWhiteBoardView.h */,
+				AB99B2F01FAA718600ECD385 /* QCWhiteBoardView.m */,
+			);
+			path = "Draw View";
+			sourceTree = "<group>";
+		};
+		AB99B2F61FAA71F700ECD385 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				AB99B2FC1FAA762400ECD385 /* WDWhiteBoard.h */,
+				AB99B2FD1FAA762400ECD385 /* WDWhiteBoard.m */,
+				AB99B2FB1FAA75DB00ECD385 /* QCWilddogSerializing.h */,
+				AB99B2F81FAA75C100ECD385 /* QCWilddogSync.h */,
+				AB99B2F91FAA75C100ECD385 /* QCWilddogSync.m */,
+				AB99B2F71FAA71F700ECD385 /* GloableConstant.h */,
+				AB99B3001FAA76A400ECD385 /* QCLog.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB99B2CD1FAA6FF700ECD385 /* KYDrawProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB99B2E41FAA6FF700ECD385 /* Build configuration list for PBXNativeTarget "KYDrawProject" */;
+			buildPhases = (
+				0368A49B3EE8BCB7B9B343E0 /* [CP] Check Pods Manifest.lock */,
+				AB99B2CA1FAA6FF700ECD385 /* Sources */,
+				AB99B2CB1FAA6FF700ECD385 /* Frameworks */,
+				AB99B2CC1FAA6FF700ECD385 /* Resources */,
+				1D7D913E774E78C5D68F43D8 /* [CP] Embed Pods Frameworks */,
+				2783A99B2DE8930CC0123D6E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYDrawProject;
+			productName = KYDrawProject;
+			productReference = AB99B2CE1FAA6FF700ECD385 /* KYDrawProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB99B2C61FAA6FF700ECD385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = mengmengda;
+				TargetAttributes = {
+					AB99B2CD1FAA6FF700ECD385 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AB99B2C91FAA6FF700ECD385 /* Build configuration list for PBXProject "KYDrawProject" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB99B2C51FAA6FF700ECD385;
+			productRefGroup = AB99B2CF1FAA6FF700ECD385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB99B2CD1FAA6FF700ECD385 /* KYDrawProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB99B2CC1FAA6FF700ECD385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB99B2DE1FAA6FF700ECD385 /* LaunchScreen.storyboard in Resources */,
+				AB99B2F21FAA718700ECD385 /* BrushView.xib in Resources */,
+				AB99B2DB1FAA6FF700ECD385 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0368A49B3EE8BCB7B9B343E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1D7D913E774E78C5D68F43D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KYDrawProject/Pods-KYDrawProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2783A99B2DE8930CC0123D6E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KYDrawProject/Pods-KYDrawProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB99B2CA1FAA6FF700ECD385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB99B2D61FAA6FF700ECD385 /* ViewController.m in Sources */,
+				AB99B30E1FAA895A00ECD385 /* QCWebViewController.m in Sources */,
+				AB99B2F11FAA718700ECD385 /* BrushView.m in Sources */,
+				AB99B2F41FAA718700ECD385 /* QCPath.m in Sources */,
+				AB99B2F31FAA718700ECD385 /* QCDrawView.m in Sources */,
+				AB99B2E11FAA6FF700ECD385 /* main.m in Sources */,
+				AB99B30B1FAA87A300ECD385 /* QCModel.m in Sources */,
+				AB99B2FA1FAA75C100ECD385 /* QCWilddogSync.m in Sources */,
+				AB99B3111FAA8AEE00ECD385 /* RootViewController.m in Sources */,
+				AB99B2FE1FAA762400ECD385 /* WDWhiteBoard.m in Sources */,
+				AB99B2D31FAA6FF700ECD385 /* AppDelegate.m in Sources */,
+				AB99B3031FAA846E00ECD385 /* QCAPIManager.m in Sources */,
+				AB99B3081FAA84A100ECD385 /* QCAPIConfig.m in Sources */,
+				AB99B2F51FAA718700ECD385 /* QCWhiteBoardView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB99B2DC1FAA6FF700ECD385 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB99B2DD1FAA6FF700ECD385 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB99B2E21FAA6FF700ECD385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB99B2E31FAA6FF700ECD385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB99B2E51FAA6FF700ECD385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F08E7A36425AB125E072192C /* Pods-KYDrawProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTYS5Y3BQZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				INFOPLIST_FILE = KYDrawProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengmengda.KYDrawProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB99B2E61FAA6FF700ECD385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F2E30D986E34BC84C8EAD3 /* Pods-KYDrawProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTYS5Y3BQZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				INFOPLIST_FILE = KYDrawProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengmengda.KYDrawProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB99B2C91FAA6FF700ECD385 /* Build configuration list for PBXProject "KYDrawProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB99B2E21FAA6FF700ECD385 /* Debug */,
+				AB99B2E31FAA6FF700ECD385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB99B2E41FAA6FF700ECD385 /* Build configuration list for PBXNativeTarget "KYDrawProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB99B2E51FAA6FF700ECD385 /* Debug */,
+				AB99B2E61FAA6FF700ECD385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB99B2C61FAA6FF700ECD385 /* Project object */;
+}

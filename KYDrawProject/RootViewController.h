@@ -1,0 +1,13 @@
+//
+//  RootViewController.h
+//  KYDrawProject
+//
+//  Created by 魏柯岩 on 2017/11/2.
+//  Copyright © 2017年 mengmengda. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface RootViewController : UIViewController
+
+@end

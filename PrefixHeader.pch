@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  QingClass
+//
+//  Created by 0dayZh on 2016/11/15.
+//  Copyright © 2016年 qingclass. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "QCLog.h"
+#import "ReactiveObjC.h"
+#import "MJExtension.h"
+
+
+#endif /* PrefixHeader_pch */
