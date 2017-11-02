@@ -18,6 +18,7 @@
              @"desc": @"desc",
              @"isshowwap":@"isshowwap",
              @"wapurl": @"wapurl",
+             @"status": @"status",
              };
 }
 @end

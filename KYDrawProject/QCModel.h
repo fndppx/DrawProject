@@ -14,5 +14,7 @@
 @property (nonatomic,strong)NSString * desc;
 @property (nonatomic,strong)NSString * isshowwap;
 @property (nonatomic,strong)NSString * wapurl;
+@property (nonatomic,strong)NSString * status;
+
 
 @end

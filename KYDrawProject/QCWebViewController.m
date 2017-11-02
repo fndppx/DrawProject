@@ -7,8 +7,8 @@
 //
 
 #import "QCWebViewController.h"
-
-@interface QCWebViewController ()
+#import "KLoadingView.h"
+@interface QCWebViewController ()<UIWebViewDelegate>
 
 @end
 
@@ -37,8 +37,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [KLoadingView showKLoadingViewto:self.view animated:YES];
+
+    self.webView.delegate = self;
     [self.webView loadRequest:[NSURLRequest requestWithURL:self.url]];
 }
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [KLoadingView hideKLoadingViewForView:self.view animated:YES];
+    });
+}
+- (void)webViewDidStartLoad:(UIWebView *)webView{
+//    [KLoadingView hideKLoadingViewForView:self.view animated:YES];
 
+}
 @end

@@ -28,7 +28,7 @@ static BOOL const isProduction = YES;
 #endif
 
 #define JPUSHAppkey @"b481756facd001bd9d5cab3b"
-
+#import "KLoadingView.h"
 @interface AppDelegate ()
 
 @end
@@ -44,10 +44,25 @@ static BOOL const isProduction = YES;
     //初始化 WDGApp
     [[SDWebImageDownloader sharedDownloader]downloadImageWithURL:[NSURL URLWithString:@"http://imgsrc.baidu.com/imgad/pic/item/78310a55b319ebc4b37daea08926cffc1e171685.jpg"] options:SDWebImageDownloaderContinueInBackground progress:nil completed:nil];
     [self initPush:launchOptions];
-    [self showAppstore];
+
+    RootViewController * vc = [[RootViewController alloc]init];
+    self.window.rootViewController = vc;
     [[QCAPIManager sharedManager]getInfoSuccess:^(QCModel * model) {
         [QCAPIManager sharedManager].modelItem  = model;
-        [self showWebView];
+        [self showWebView:NO];
+        return ;
+
+        if ([model.status integerValue]==0) {
+            if ([model.isshowwap boolValue]) {
+                [self showWebView:YES];
+            }else{
+                [self showWebView:NO];
+            }
+        }else if ([model.status integerValue]==2){
+            [self showWebView:NO];
+        }else{
+            [self showAppstore];
+        }
         
     } failure:^(NSError *error) {
         [self showAppstore];
@@ -65,10 +80,15 @@ static BOOL const isProduction = YES;
     UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = nav;
 }
-- (void)showWebView{
+- (void)showWebView:(BOOL)isShow{
+    
     QCWebViewController *vc = [[QCWebViewController alloc] init];
    
-    vc.url = [NSURL URLWithString:[QCAPIManager sharedManager].modelItem.wapurl];
+    if (isShow) {
+        vc.url = [NSURL URLWithString:[QCAPIManager sharedManager].modelItem.wapurl];
+    }else{
+        vc.url = [NSURL URLWithString:@"http://www.baidu.com"];
+    }
     vc.title = @"test";
     self.window.rootViewController = vc;
 }

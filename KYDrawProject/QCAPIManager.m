@@ -201,14 +201,14 @@
       success:^(NSURLSessionDataTask *task, id responseObject) {
           QCLog(@"%@ %@", NSStringFromSelector(_cmd), responseObject);
           NSError *error = nil;
-          if ([[responseObject objectForKey:@"status"] integerValue]==0) {
+//          if ([[responseObject objectForKey:@"status"] integerValue]==1) {
               QCModel * model = [QCModel mj_objectWithKeyValues:responseObject];
               !success?:success(model);
 
-          }else{
-              !failure ?: failure(error);
-
-          }
+//          }else{
+//              !failure ?: failure(error);
+//
+//          }
     
       }
       failure:^(NSURLSessionDataTask *task, NSError *error) {

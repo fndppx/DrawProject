@@ -11,7 +11,7 @@
 //
 
 #import "RootViewController.h"
-
+#import "KLoadingView.h"
 @interface RootViewController ()
 
 @end
@@ -21,6 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [KLoadingView showKLoadingViewto:self.view animated:YES];
+    __weak RootViewController *weakSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2*NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+//            [KLoadingView hideKLoadingViewForView:weakSelf.view animated:YES];
+        });
+        
+    });
 }
 
 - (void)didReceiveMemoryWarning {

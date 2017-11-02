@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB419FD81FABC6AA00693ED7 /* KLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB419FD61FABC6AA00693ED7 /* KLoadingView.m */; };
+		AB419FD91FABC6AA00693ED7 /* loading.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB419FD71FABC6AA00693ED7 /* loading.bundle */; };
 		AB99B2D31FAA6FF700ECD385 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2D21FAA6FF700ECD385 /* AppDelegate.m */; };
 		AB99B2D61FAA6FF700ECD385 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2D51FAA6FF700ECD385 /* ViewController.m */; };
 		AB99B2DB1FAA6FF700ECD385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB99B2DA1FAA6FF700ECD385 /* Assets.xcassets */; };
@@ -28,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB419FD51FABC6AA00693ED7 /* KLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLoadingView.h; sourceTree = "<group>"; };
+		AB419FD61FABC6AA00693ED7 /* KLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLoadingView.m; sourceTree = "<group>"; };
+		AB419FD71FABC6AA00693ED7 /* loading.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = loading.bundle; sourceTree = "<group>"; };
 		AB99B2CE1FAA6FF700ECD385 /* KYDrawProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYDrawProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB99B2D11FAA6FF700ECD385 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB99B2D21FAA6FF700ECD385 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +106,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AB419FD41FABC6AA00693ED7 /* KLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				AB419FD51FABC6AA00693ED7 /* KLoadingView.h */,
+				AB419FD61FABC6AA00693ED7 /* KLoadingView.m */,
+				AB419FD71FABC6AA00693ED7 /* loading.bundle */,
+			);
+			path = KLoadingView;
+			sourceTree = "<group>";
+		};
 		AB99B2C51FAA6FF700ECD385 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +137,7 @@
 		AB99B2D01FAA6FF700ECD385 /* KYDrawProject */ = {
 			isa = PBXGroup;
 			children = (
+				AB419FD41FABC6AA00693ED7 /* KLoadingView */,
 				AB99B30D1FAA895900ECD385 /* QCWebViewController.h */,
 				AB99B30C1FAA895900ECD385 /* QCWebViewController.m */,
 				AB99B3011FAA846D00ECD385 /* QCAPIManager.h */,
@@ -239,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB419FD91FABC6AA00693ED7 /* loading.bundle in Resources */,
 				AB99B2DE1FAA6FF700ECD385 /* LaunchScreen.storyboard in Resources */,
 				AB99B2F21FAA718700ECD385 /* BrushView.xib in Resources */,
 				AB99B2DB1FAA6FF700ECD385 /* Assets.xcassets in Resources */,
@@ -309,6 +326,7 @@
 				AB99B30B1FAA87A300ECD385 /* QCModel.m in Sources */,
 				AB99B2FA1FAA75C100ECD385 /* QCWilddogSync.m in Sources */,
 				AB99B3111FAA8AEE00ECD385 /* RootViewController.m in Sources */,
+				AB419FD81FABC6AA00693ED7 /* KLoadingView.m in Sources */,
 				AB99B2FE1FAA762400ECD385 /* WDWhiteBoard.m in Sources */,
 				AB99B2D31FAA6FF700ECD385 /* AppDelegate.m in Sources */,
 				AB99B3031FAA846E00ECD385 /* QCAPIManager.m in Sources */,
