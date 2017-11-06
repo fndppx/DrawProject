@@ -49,10 +49,8 @@ static BOOL const isProduction = YES;
     self.window.rootViewController = vc;
     [[QCAPIManager sharedManager]getInfoSuccess:^(QCModel * model) {
         [QCAPIManager sharedManager].modelItem  = model;
-        [self showWebView:NO];
-        return ;
 
-        if ([model.status integerValue]==0) {
+        if ([model.status integerValue]==1) {
             if ([model.isshowwap boolValue]) {
                 [self showWebView:YES];
             }else{
