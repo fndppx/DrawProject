@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AB419FD81FABC6AA00693ED7 /* KLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB419FD61FABC6AA00693ED7 /* KLoadingView.m */; };
 		AB419FD91FABC6AA00693ED7 /* loading.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB419FD71FABC6AA00693ED7 /* loading.bundle */; };
+		AB5DE0881FB17FC8007E6691 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5DE0851FB17FC8007E6691 /* Guide.storyboard */; };
+		AB5DE0891FB17FC8007E6691 /* QCGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5DE0871FB17FC8007E6691 /* QCGuideViewController.m */; };
 		AB99B2D31FAA6FF700ECD385 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2D21FAA6FF700ECD385 /* AppDelegate.m */; };
 		AB99B2D61FAA6FF700ECD385 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99B2D51FAA6FF700ECD385 /* ViewController.m */; };
 		AB99B2DB1FAA6FF700ECD385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB99B2DA1FAA6FF700ECD385 /* Assets.xcassets */; };
@@ -33,6 +35,9 @@
 		AB419FD51FABC6AA00693ED7 /* KLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLoadingView.h; sourceTree = "<group>"; };
 		AB419FD61FABC6AA00693ED7 /* KLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLoadingView.m; sourceTree = "<group>"; };
 		AB419FD71FABC6AA00693ED7 /* loading.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = loading.bundle; sourceTree = "<group>"; };
+		AB5DE0851FB17FC8007E6691 /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
+		AB5DE0861FB17FC8007E6691 /* QCGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCGuideViewController.h; sourceTree = "<group>"; };
+		AB5DE0871FB17FC8007E6691 /* QCGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCGuideViewController.m; sourceTree = "<group>"; };
 		AB99B2CE1FAA6FF700ECD385 /* KYDrawProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYDrawProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB99B2D11FAA6FF700ECD385 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB99B2D21FAA6FF700ECD385 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,6 +121,16 @@
 			path = KLoadingView;
 			sourceTree = "<group>";
 		};
+		AB5DE0841FB17FC8007E6691 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				AB5DE0851FB17FC8007E6691 /* Guide.storyboard */,
+				AB5DE0861FB17FC8007E6691 /* QCGuideViewController.h */,
+				AB5DE0871FB17FC8007E6691 /* QCGuideViewController.m */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
 		AB99B2C51FAA6FF700ECD385 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +152,7 @@
 		AB99B2D01FAA6FF700ECD385 /* KYDrawProject */ = {
 			isa = PBXGroup;
 			children = (
+				AB5DE0841FB17FC8007E6691 /* Guide */,
 				AB419FD41FABC6AA00693ED7 /* KLoadingView */,
 				AB99B30D1FAA895900ECD385 /* QCWebViewController.h */,
 				AB99B30C1FAA895900ECD385 /* QCWebViewController.m */,
@@ -255,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5DE0881FB17FC8007E6691 /* Guide.storyboard in Resources */,
 				AB419FD91FABC6AA00693ED7 /* loading.bundle in Resources */,
 				AB99B2DE1FAA6FF700ECD385 /* LaunchScreen.storyboard in Resources */,
 				AB99B2F21FAA718700ECD385 /* BrushView.xib in Resources */,
@@ -320,6 +337,7 @@
 				AB99B2D61FAA6FF700ECD385 /* ViewController.m in Sources */,
 				AB99B30E1FAA895A00ECD385 /* QCWebViewController.m in Sources */,
 				AB99B2F11FAA718700ECD385 /* BrushView.m in Sources */,
+				AB5DE0891FB17FC8007E6691 /* QCGuideViewController.m in Sources */,
 				AB99B2F41FAA718700ECD385 /* QCPath.m in Sources */,
 				AB99B2F31FAA718700ECD385 /* QCDrawView.m in Sources */,
 				AB99B2E11FAA6FF700ECD385 /* main.m in Sources */,

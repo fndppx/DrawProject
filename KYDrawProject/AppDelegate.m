@@ -29,6 +29,7 @@ static BOOL const isProduction = YES;
 
 #define JPUSHAppkey @"b481756facd001bd9d5cab3b"
 #import "KLoadingView.h"
+#import "QCGuideViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -45,26 +46,32 @@ static BOOL const isProduction = YES;
     [[SDWebImageDownloader sharedDownloader]downloadImageWithURL:[NSURL URLWithString:@"http://imgsrc.baidu.com/imgad/pic/item/78310a55b319ebc4b37daea08926cffc1e171685.jpg"] options:SDWebImageDownloaderContinueInBackground progress:nil completed:nil];
     [self initPush:launchOptions];
 
-    RootViewController * vc = [[RootViewController alloc]init];
-    self.window.rootViewController = vc;
-    [[QCAPIManager sharedManager]getInfoSuccess:^(QCModel * model) {
-        [QCAPIManager sharedManager].modelItem  = model;
-
-        if ([model.status integerValue]==1) {
-            if ([model.isshowwap boolValue]) {
-                [self showWebView:YES];
-            }else{
+    
+    [QCGuideViewController showGuideViewControllerIfNeededInWindow:self.window done:^{
+        RootViewController * vc = [[RootViewController alloc]init];
+        self.window.rootViewController = vc;
+        [[QCAPIManager sharedManager]getInfoSuccess:^(QCModel * model) {
+            [QCAPIManager sharedManager].modelItem  = model;
+            
+            if ([model.status integerValue]==1) {
+                if ([model.isshowwap boolValue]) {
+                    [self showWebView:YES];
+                }else{
+                    [self showWebView:NO];
+                }
+            }else if ([model.status integerValue]==2){
                 [self showWebView:NO];
+            }else{
+                [self showAppstore];
             }
-        }else if ([model.status integerValue]==2){
-            [self showWebView:NO];
-        }else{
+            
+        } failure:^(NSError *error) {
             [self showAppstore];
-        }
-        
-    } failure:^(NSError *error) {
-        [self showAppstore];
+        }];
     }];
+
+    
+   
  
     return YES;
 }
