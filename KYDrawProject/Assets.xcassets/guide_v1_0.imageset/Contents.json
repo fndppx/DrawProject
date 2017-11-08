@@ -2,26 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "介绍页 ssc 1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "guide_v1_2.jpg",
+      "filename" : "介绍页 ssc 1-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "介绍页 ssc 1-2.png",
       "scale" : "3x"
-    },
-    {
-      "idiom" : "ipad",
-      "filename" : "guide_v1_2@2x~ipad.png",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "ipad",
-      "filename" : "guide_v1_2~ipad.png",
-      "scale" : "2x"
     }
   ],
   "info" : {

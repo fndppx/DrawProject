@@ -27,7 +27,7 @@ static BOOL const isProduction = NO;
 static BOOL const isProduction = YES;
 #endif
 
-#define JPUSHAppkey @"b481756facd001bd9d5cab3b"
+#define JPUSHAppkey @"1c1919afd4636e88e760cff5"
 #import "KLoadingView.h"
 #import "QCGuideViewController.h"
 @interface AppDelegate ()
