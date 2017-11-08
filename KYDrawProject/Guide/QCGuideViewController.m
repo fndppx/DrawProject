@@ -68,12 +68,7 @@
         [self.imageViews addObject:imageView];
     }
     
-    UIImageView *lastImageView = [self.imageViews lastObject];
-    lastImageView.userInteractionEnabled = YES;
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(width / 4.0, height * 0.85, width / 2.0, 50);
-    [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [lastImageView addSubview:button];
+    
     
     
     _pageControl = [[UIPageControl alloc] init];
@@ -86,6 +81,16 @@
     _pageControl.currentPageIndicatorTintColor = [UIColor grayColor]; // 设置选中页的圆点颜色
     [self.view addSubview:_pageControl];
     
+    
+    UIImageView *lastImageView = [self.imageViews lastObject];
+    lastImageView.userInteractionEnabled = YES;
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(width / 4.0, height * 0.85-40, width / 2.0, 50);
+    button.backgroundColor = [UIColor grayColor];
+    [button setTitle:@"点击进入" forState:UIControlStateNormal];
+    button.alpha = 0.5;
+    [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [lastImageView addSubview:button];
    
 }
 //pagecontroll的委托方法
