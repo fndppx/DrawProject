@@ -38,6 +38,7 @@
 		AB5DE0851FB17FC8007E6691 /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
 		AB5DE0861FB17FC8007E6691 /* QCGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCGuideViewController.h; sourceTree = "<group>"; };
 		AB5DE0871FB17FC8007E6691 /* QCGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCGuideViewController.m; sourceTree = "<group>"; };
+		AB93E65A1FB2CAB500A57250 /* KYDrawProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KYDrawProject.entitlements; sourceTree = "<group>"; };
 		AB99B2CE1FAA6FF700ECD385 /* KYDrawProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYDrawProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB99B2D11FAA6FF700ECD385 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB99B2D21FAA6FF700ECD385 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -152,6 +153,7 @@
 		AB99B2D01FAA6FF700ECD385 /* KYDrawProject */ = {
 			isa = PBXGroup;
 			children = (
+				AB93E65A1FB2CAB500A57250 /* KYDrawProject.entitlements */,
 				AB5DE0841FB17FC8007E6691 /* Guide */,
 				AB419FD41FABC6AA00693ED7 /* KLoadingView */,
 				AB99B30D1FAA895900ECD385 /* QCWebViewController.h */,
@@ -244,7 +246,12 @@
 				TargetAttributes = {
 					AB99B2CD1FAA6FF700ECD385 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -476,8 +483,10 @@
 			baseConfigurationReference = F08E7A36425AB125E072192C /* Pods-KYDrawProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = KYDrawProject/KYDrawProject.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thomas Green (SETD4H2Y6G)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Thomas Green (SETD4H2Y6G)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = UW8PA53ALV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
@@ -486,6 +495,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.zsks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "adff041d-20d2-4a0d-b13d-840dd192eb52";
+				PROVISIONING_PROFILE_SPECIFIER = devPush;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -495,9 +506,11 @@
 			baseConfigurationReference = D9F2E30D986E34BC84C8EAD3 /* Pods-KYDrawProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KYDrawProject/KYDrawProject.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UW8PA53ALV;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = KYDrawProject/Info.plist;
@@ -505,6 +518,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.zsks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

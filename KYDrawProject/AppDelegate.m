@@ -21,13 +21,13 @@
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
 #endif
-#ifdef DEBUG
+//#ifdef DEBUG
 static BOOL const isProduction = NO;
-#else
-static BOOL const isProduction = YES;
-#endif
+//#else
+//static BOOL const isProduction = YES;
+//#endif
 
-#define JPUSHAppkey @"1c1919afd4636e88e760cff5"
+#define JPUSHAppkey @"43f8bbdd25aa6dbc3202e36a"
 #import "KLoadingView.h"
 #import "QCGuideViewController.h"
 @interface AppDelegate ()
