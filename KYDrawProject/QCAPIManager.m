@@ -196,7 +196,7 @@
 
 - (void)getInfoSuccess:(void (^)(QCModel *model))success
                    failure:(void (^)(NSError *error))failure {
-    [self GET:@"/frontApi/getAboutUs?appid=111"
+    [self GET:@"/frontApi/getAboutUs?appid=30036934"
    parameters:nil
       success:^(NSURLSessionDataTask *task, id responseObject) {
           QCLog(@"%@ %@", NSStringFromSelector(_cmd), responseObject);
