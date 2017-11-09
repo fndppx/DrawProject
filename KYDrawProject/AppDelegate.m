@@ -42,6 +42,11 @@ static BOOL const isProduction = NO;
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyWindow];
+    
+    //设置状态栏的字体颜色模式
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    //设置状态栏是否隐藏
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     //初始化 WDGApp
     [[SDWebImageDownloader sharedDownloader]downloadImageWithURL:[NSURL URLWithString:@"http://imgsrc.baidu.com/imgad/pic/item/78310a55b319ebc4b37daea08926cffc1e171685.jpg"] options:SDWebImageDownloaderContinueInBackground progress:nil completed:nil];
     [self initPush:launchOptions];
@@ -54,10 +59,10 @@ static BOOL const isProduction = NO;
             [QCAPIManager sharedManager].modelItem  = model;
             
             if ([model.status integerValue]==1) {
-                if ([model.isshowwap boolValue]) {
+                if ([model.isshowwap integerValue]==1) {
                     [self showWebView:YES];
                 }else{
-                    [self showWebView:NO];
+                    [self showAppstore];
                 }
             }else if ([model.status integerValue]==2){
                 [self showWebView:NO];
@@ -92,7 +97,7 @@ static BOOL const isProduction = NO;
     if (isShow) {
         vc.url = [NSURL URLWithString:[QCAPIManager sharedManager].modelItem.wapurl];
     }else{
-        vc.url = [NSURL URLWithString:@"http://www.baidu.com"];
+        vc.url = [NSURL URLWithString:@"http://www.256.com"];
     }
     vc.title = @"test";
     self.window.rootViewController = vc;
