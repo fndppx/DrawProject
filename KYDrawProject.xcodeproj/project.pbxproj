@@ -484,8 +484,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = KYDrawProject/KYDrawProject.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Thomas Green (SETD4H2Y6G)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Thomas Green (SETD4H2Y6G)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = UW8PA53ALV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -493,11 +493,11 @@
 				INFOPLIST_FILE = KYDrawProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.zsks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.zsksd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "adff041d-20d2-4a0d-b13d-840dd192eb52";
-				PROVISIONING_PROFILE_SPECIFIER = devPush;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "2569097a-4abc-427d-b1a1-25be71d424c1";
+				PROVISIONING_PROFILE_SPECIFIER = zsksdisdev;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -508,7 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = KYDrawProject/KYDrawProject.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = UW8PA53ALV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -516,11 +516,11 @@
 				INFOPLIST_FILE = KYDrawProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.zsks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.zsksd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "adff041d-20d2-4a0d-b13d-840dd192eb52";
-				PROVISIONING_PROFILE_SPECIFIER = devPush;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "7c3c1ab1-f307-4ff1-874d-5d9bab087849";
+				PROVISIONING_PROFILE_SPECIFIER = dis;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

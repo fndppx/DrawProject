@@ -21,13 +21,13 @@
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
 #endif
-//#ifdef DEBUG
+#ifdef DEBUG
 static BOOL const isProduction = NO;
-//#else
-//static BOOL const isProduction = YES;
-//#endif
+#else
+static BOOL const isProduction = YES;
+#endif
 
-#define JPUSHAppkey @"43f8bbdd25aa6dbc3202e36a"
+#define JPUSHAppkey @"33f7314618b5fcd4230b9c95"
 #import "KLoadingView.h"
 #import "QCGuideViewController.h"
 @interface AppDelegate ()
@@ -50,6 +50,7 @@ static BOOL const isProduction = NO;
     //初始化 WDGApp
     [[SDWebImageDownloader sharedDownloader]downloadImageWithURL:[NSURL URLWithString:@"http://imgsrc.baidu.com/imgad/pic/item/78310a55b319ebc4b37daea08926cffc1e171685.jpg"] options:SDWebImageDownloaderContinueInBackground progress:nil completed:nil];
     [self initPush:launchOptions];
+    [JPUSHService setBadge:0];
 
     
     [QCGuideViewController showGuideViewControllerIfNeededInWindow:self.window done:^{
