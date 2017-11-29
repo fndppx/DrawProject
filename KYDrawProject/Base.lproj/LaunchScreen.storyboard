@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="大礼包" translatesAutoresizingMaskIntoConstraints="NO" id="lO5-sS-HKU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_v1_2" translatesAutoresizingMaskIntoConstraints="NO" id="lO5-sS-HKU">
                                 <rect key="frame" x="0.0" y="-20" width="375" height="687"/>
                             </imageView>
                         </subviews>
@@ -36,10 +36,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-406" y="383"/>
         </scene>
     </scenes>
     <resources>
-        <image name="大礼包" width="621" height="1104"/>
+        <image name="guide_v1_2" width="540" height="960"/>
     </resources>
 </document>
